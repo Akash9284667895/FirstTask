@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <button class="close-btn" type="button" onclick="closeForm()">×</button>
+        <form>
+            <h2>Create a project</h2>
+            <label for="project-name">Project name</label>
+            <input type="text" id="project-name" placeholder="Enter project name here">
+
+            <label for="client">Client</label>
+            <div class="client-row">
+                <select id="client">
+                    <option value="" disabled selected>Select a client</option>
+                    <!-- Add client options here -->
+                </select>
+                <button type="button" id="new-client">+ New Client</button>
+            </div>
+
+            <label for="start-date">Dates</label>
+            <div class="date-row">
+                <input type="date" id="start-date">
+                <span>-</span>
+                <input type="date" id="end-date">
+            </div>
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" placeholder="Optional"></textarea>
+
+            <div class="button-row">
+                <button type="button" id="back">Back</button>
+                <button type="submit" id="next">Next</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
